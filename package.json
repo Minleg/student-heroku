@@ -1,0 +1,16 @@
+{
+    "name": "student-sign-in-api",
+    "description": "Vue and express App, Student sign in API",
+    "author": "Tenzin Minleg",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.3",
+        "pg": "^8.7.3",
+        "sequelize": "^6.18.0"
+    },
+    "devDependencies": {
+        "sqlite3": "^5.0.2"
+    }
+}
