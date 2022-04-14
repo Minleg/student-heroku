@@ -5,6 +5,13 @@
     },
     "production": {
         "use_env_varaiable": "DATABASE_URL",
-        "dialect": "postgres"
+        "dialect": "postgres",
+        "ssl": true,
+        "dialectOptions": {
+            "ssl": {
+                "require": true,
+                "rejectUnauthorized": false
+            }
+        }
     }
 }

@@ -6,7 +6,12 @@ let express = require('express') // imports express library
 
 let api_routes = require('./routes/api.js') // imports the api routes, .js is optional here, it is assumed
 
+let path = require('path')
+
 let app = express() // creates a new web app
+
+let vueClientPath = path.join(__dirname, 'student-sign-in-client','dist') // path to the dist (distribution) file in student-sign-in-client
+app.use(express.static(vueClientPath)) // to use that 
 
 // be able to handle JSON requests, convert data to JavaScript
 app.use(express.json()) // this makes the app aware that we could be recieving json data
