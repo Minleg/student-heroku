@@ -1,6 +1,8 @@
   <template>
   <div id="app">
 
+    <h2> Student Sign In </h2>
+
     <new-student-form v-on:student-added="newStudentAdded"></new-student-form><!--when student-added event happens in the NewStudentForm, newStudentAdded method is called-->
     <student-table v-bind:students="students" 
       v-on:student-arrived-or-left="studentArrivedOrLeft"
