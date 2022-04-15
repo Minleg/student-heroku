@@ -4,7 +4,7 @@
         "dialect": "sqlite"
     },
     "production": {
-        "use_env_varaiable": "DATABASE_URL",
+        "use_env_variable": "DATABASE_URL",
         "dialect": "postgres",
         "ssl": true,
         "dialectOptions": {
