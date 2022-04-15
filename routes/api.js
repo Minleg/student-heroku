@@ -10,7 +10,7 @@ let router = express.Router()
 
 // get requests to get all the student data 
 router.get('/students',function( req, res, next) { // order contains how to order the data in table, can contain multiple ways to order by
-    Student.findAll( {order: ['present','name']} ).then( students => { // findAll() student method finds all students, returns a promise which is handled by then()
+    Student.findAll( {order: ['present','starID']} ).then( students => { // findAll() student method finds all students, returns a promise which is handled by then()
         return res.json(students) // this entire code returns a json data containing array of of all students
     }) .catch( err => next(err)) // res.json by default sets the status code to 200
 })
